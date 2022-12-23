@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="vh-100" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/3ee2d30d4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>El tiempo</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light" id="nav">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="clima1-removebg-preview.png" alt="logo" width="90" height="90">
+            </a>
+            <h3 class="align-content-center" id="header">El tiempo en tu ciudad ahora</h3>
+        </div>
+    </nav>
+    <div id="loader"><img class="d-flex justify-content-center align-items-center align-content-center mx-auto" src="Ball-1s-200px(1).gif" alt="loader"></div>
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center align-content-center min-vh-100">
+            <div class="card col-md-6 card">
+                <div class="card-header">
+
+                    <!-- <h2 class="text-center mb-4">El tiempo en tu ciudad</h2> -->
+                    <form class="row g-3 mb-3 form" id="formulario">
+                        <div class="col-sm-12 col-md-8">
+                            <div class="input-group input-group-sm">
+                                <label for="inputCiudad" class="visually-hidden">Ciudad</label>
+                                <input type="text" class="form-control" id="inputCiudad" placeholder="Ingrese una ciudad">
+                            </div>
+                        </div>
+                        <div class="d-grid col-sm-12 col-md-4">
+                            <button type="submit" class="btn btn-outline-dark btn-sm" id="btn">Consultar</button>
+                        </div>
+
+                </div>
+
+                </form>
+
+                <div class="card-body caja-clima" id="cuerpo">
+                    <h3 id="titleCiudad"></h3>
+                    <div class="row align-items-center">
+                        <dt class="col-sm-12" id="descripcion"></dt>
+                        <dd class="col-sm-12" id="icono"></dd>
+                        <dd class="col-sm-12 temperaturaAct" id="tempActual"></dd>
+                    </div>
+
+                    <div class="row align-items-center card-footer" id="pie">
+                        <dt class="col-sm-2 footer"><i class="fas fa-sun"aria-hidden="true" style="font-size: 2rem;"></i>Sensación térmica</dt>
+                        <dd class="col-sm-2 footer">
+                            <p id="sensTermica"></p>
+                        </dd>
+
+                        <dt class="col-sm-2 footer"><i class="fas fa-temperature-low" aria-hidden="true" style="font-size: 2rem;"></i>Temperatura mínima</dt>
+                        <dd class="col-sm-2 footer" id="tempMin"></dd>
+
+                        <dt class="col-sm-2 footer"><i class="fas fa-temperature-high" aria-hidden="true" style="font-size: 2rem;"></i>Temperatura máxima</dt>
+                        <dd class="col-sm-2 footer" id="tempMax"></dd>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light" id="ft">Hecho con <span><i class="em em-heart" aria-role="presentation" aria-label="HEAVY BLACK HEART"></i></span> por Mica </footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

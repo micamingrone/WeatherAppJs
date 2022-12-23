@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Condensed:wght@300&display=swap');
+body {
+    background: #121FCF;
+    background: -webkit-linear-gradient(to bottom right, #121FCF 23%, #42AECF 100%);
+    background: -moz-linear-gradient(to bottom right, #121FCF 23%, #42AECF 100%);
+    background: linear-gradient(to bottom right, #121FCF 23%, #42AECF 100%);
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#loader img {
+    margin-top: 15%;
+}
+
+#header {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.nav {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    color: #000B49;
+    margin: 0.9em;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-color: #92A9BD;
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: center!important;
+    font-size: 2rem;
+    color: #000B49;
+    font-weight: 500;
+}
+
+#formulario {
+    font-family: 'PT Sans', sans-serif;
+}
+
+#btn {
+    margin-top: 10px;
+}
+
+#inputCiudad {
+    height: 35px;
+    margin-top: 10px;
+}
+
+.caja-clima {
+    min-height: 353px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #fff;
+}
+
+#descripcion {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+#icono {
+    text-align: center;
+}
+
+#icono img {
+    height: 150px;
+    width: auto;
+}
+
+.titleCiudad {
+    color: #000;
+}
+
+.temperaturaAct {
+    text-align: center;
+}
+
+#tempActual {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+
+.footer {
+    font-size: 0.7rem;
+}
+
+#sensTermica {
+    margin-top: 0px;
+    margin-bottom: 0rem;
+    font-size: 1.1rem;
+}
+
+#tempMin {
+    font-size: 1.1rem;
+}
+
+#tempMax {
+    font-size: 1.1rem;
+}
+
+.card-footer {
+    background-color: gainsboro;
+}
+
+#ft {
+    text-align: center;
+}
